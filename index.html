@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Henri Ailio tarjoaa laadukasta ja potilaslähtöistä hammashoitoa Helsingissä Oral Töölön ja City-Hammaslääkärit-toimipisteissä."/>
   <title>Henri Ailio | Hammaslääkäri</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 
 <body>
   <!-- =================== NAVIGAATIO HEADERI ============== -->
   <header class="navbar">
     <div class="container nav-content">
-      <a href="#home" class="logo">
+      <a href="#home" class="logo" aria-label="Henri Ailio etusivulle">
         <span class="logo-icon">
-          <img src="./images/logo.png" alt="Henri Logo"/>
+          <img src="./images/logo.png" alt="Henri Ailio logo"/>
         </span>
         <span>Henri Ailio</span>
       </a>
@@ -21,18 +22,26 @@
       <button class="menu-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">☰</button>
 
       <nav id="main-nav" class="nav-links">
-        <a href="#home" data-en="Home" data-fi="Etusivu">Home</a>
-        <a href="#about" data-en="About me" data-fi="Tietoa minusta">About</a>
-        <a href="#services" data-en="Services" data-fi="Palvelut">Services</a>
-        <a href="#locations" data-en="Locations" data-fi="Toimipisteet">Locations</a>
-        <a href="#faq" data-en="FAQ" data-fi="UKK">FAQ</a>
+        <a href="#home" data-en="Home" data-fi="Etusivu">Etusivu</a>
+        <a href="#about" data-en="About me" data-fi="Tietoa minusta">Tietoa minusta</a>
+        <a href="#services" data-en="Services" data-fi="Palvelut">Palvelut</a>
+        <a href="#locations" data-en="Locations" data-fi="Toimipisteet">Toimipisteet</a>
+        <a href="#faq" data-en="FAQ" data-fi="UKK">UKK</a>
 
-        <div class="language-switcher">
-          <button class="lang-btn active" data-lang="fi">FI</button>
-          <button class="lang-btn" data-lang="en">EN</button>
+        <div class="language-switcher" aria-label="Language selection">
+          <button class="lang-btn active" data-lang="fi" type="button">FI</button>
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
         </div>
 
-        <a href="https://www.oral.fi/asiantuntijat/henri-ailio/" target="_blank" rel="noopener noreferrer" class="nav-button" data-en="Book Now" data-fi="Varaa aika">Book Now</a>
+        <a href="https://www.oral.fi/asiantuntijat/henri-ailio/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="nav-button"
+           aria-label="Varaa aika Henri Ailiolle Oralin sivuilta"
+           data-en="Book Now"
+           data-fi="Varaa aika">
+          Varaa aika
+        </a>
       </nav>
     </div>
   </header>
@@ -42,207 +51,217 @@
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <h1 
-          data-en="Henri Ailio – dental care you can trust"
-          data-fi="Henri Ailio – hammashoitoa, johon voit luottaa">
-            Henri Ailio – dental care you can trust
+          <h1 data-en="Henri Ailio – dental care you can trust"
+              data-fi="Henri Ailio – hammashoitoa, johon voit luottaa">
+            Henri Ailio – hammashoitoa, johon voit luottaa
           </h1>
 
-          <p
-          data-en="I provide individual dental care in a calm and trustworthy environment. Whether it's a routine check-up or treatment, the goal is that you feel confident at every visit."
-          data-fi="Tarjoan yksilöllistä hammashoitoa rauhallisessa ja luotettavassa ympäristössä. Olipa kyseessä tarkastuksesta tai hoidosta - tavoitteena on, että tunnet olosi varma jokaisella käynnillä.">
-            I provide individual dental care in a calm and trustworthy environment. Whether it's a routine check-up or treatment, the goal is that you feel confident at every visit.
+          <p data-en="I provide individual dental care in a calm and trustworthy environment. Whether it's a routine check-up or treatment, the goal is that you feel confident at every visit."
+             data-fi="Tarjoan yksilöllistä hammashoitoa rauhallisessa ja luotettavassa ympäristössä. Olipa kyse tarkastuksesta tai hoidosta, tavoitteena on, että tunnet olosi varmaksi jokaisella käynnillä.">
+            Tarjoan yksilöllistä hammashoitoa rauhallisessa ja luotettavassa ympäristössä. Olipa kyse tarkastuksesta tai hoidosta, tavoitteena on, että tunnet olosi varmaksi jokaisella käynnillä.
           </p>
 
           <div class="hero-buttons">
-            <a href="https://www.oral.fi/asiantuntijat/henri-ailio/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-en="Book Appointment" data-fi="Varaa aika">Book Appointment</a>
-            <a href="#about" class="btn btn-secondary" data-en="Learn More" data-fi="Lue lisää">Learn More</a>
+            <a href="https://www.oral.fi/asiantuntijat/henri-ailio/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary"
+               aria-label="Varaa aika Henri Ailiolle Oralin sivuilta"
+               data-en="Book Appointment"
+               data-fi="Varaa aika">
+              Varaa aika
+            </a>
+
+            <a href="#about" class="btn btn-secondary" data-en="Learn More" data-fi="Lue lisää">
+              Lue lisää
+            </a>
           </div>
         </div>
 
-        <div class="hero-image image-placeholder">
-          <span data-en="Image coming soon" data-fi="Kuva tulossa">Image coming soon</span>
+        <div class="hero-image image-placeholder" role="img" aria-label="Henri Ailion kuva tulossa">
+          <span data-en="Image coming soon" data-fi="Kuva tulossa">Kuva tulossa</span>
         </div>
       </div>
     </section>
 
     <!-- ====================== TIEDOT SEKTIO ===================== -->
     <section id="about" class="about-section">
-  <div class="container">
-    <div class="section-title">
-      <h2 data-en="About Me" data-fi="Tietoa minusta">Tietoa minusta</h2>
-      <p data-en="High-quality and patient-centered dental care in Helsinki"
-         data-fi="Laadukasta ja potilaslähtöistä hammashoitoa Helsingissä">
-        Luotettava ja lempeä hammaslääkäri Helsingissä
-      </p>
-    </div>
+      <div class="container">
+        <div class="section-title">
+          <h2 data-en="About Me" data-fi="Tietoa minusta">Tietoa minusta</h2>
+          <p data-en="High-quality and patient-centered dental care in Helsinki"
+             data-fi="Laadukasta ja potilaslähtöistä hammashoitoa Helsingissä">
+            Laadukasta ja potilaslähtöistä hammashoitoa Helsingissä
+          </p>
+        </div>
 
-    <div class="about-grid">
-      <div class="about-text">
-        <h3 data-en="Get to know me" data-fi="Tutustu minuun">Tutustu Henri Ailioon</h3>
+        <div class="about-grid">
+          <div class="about-text">
+            <h3 data-en="Get to know me" data-fi="Tutustu minuun">Tutustu minuun</h3>
 
-        <p data-en="I am a general dentist providing comprehensive dental care in Helsinki. Originally from Naantali, I graduated with a Licentiate in Dentistry from the University of Turku."
-           data-fi="Olen yleishammaslääkäri, ja tarjoan monipuolista hammashoitoa Helsingissä. Olen alun perin kotoisin Naantalista ja valmistunut hammaslääketieteen lisensiaatiksi Turun yliopistosta.">
-          Olen yleishammaslääkäri, ja tarjoan monipuolista hammashoitoa Helsingissä. Olen alun perin kotoisin Naantalista ja valmistunut hammaslääketieteen lisensiaatiksi Turun yliopistosta.
-        </p>
+            <p data-en="I am a general dentist providing comprehensive dental care in Helsinki. Originally from Naantali, I graduated with a Licentiate in Dentistry from the University of Turku."
+               data-fi="Olen yleishammaslääkäri, ja tarjoan monipuolista hammashoitoa Helsingissä. Olen alun perin kotoisin Naantalista ja valmistunut hammaslääketieteen lisensiaatiksi Turun yliopistosta.">
+              Olen yleishammaslääkäri, ja tarjoan monipuolista hammashoitoa Helsingissä. Olen alun perin kotoisin Naantalista ja valmistunut hammaslääketieteen lisensiaatiksi Turun yliopistosta.
+            </p>
 
-        <p data-en="In my work, I emphasize patient-centered care, clear communication, and meticulous dental work. I handle a wide range of oral health challenges, from routine check-ups and toothache treatment to more advanced procedures. I have experience in treating gum diseases, root canals, fillings, and prosthetics."
-           data-fi="Työssäni korostuvat potilaslähtöisyys, selkeä viestintä ja huolellinen hoitotyö. Hoidan laajasti erilaisia suun terveyden haasteita aina perustarkastuksista ja hammassäryn hoidosta vaativampiin toimenpiteisiin. Minulla on kokemusta muun muassa iensairauksien hoidosta, juurihoidoista, paikkaushoidosta sekä protetiikasta.">
-          Työssäni korostuvat potilaslähtöisyys, selkeä viestintä ja huolellinen hoitotyö. Hoidan laajasti erilaisia suun terveyden haasteita aina perustarkastuksista ja hammassäryn hoidosta vaativampiin toimenpiteisiin. Minulla on kokemusta muun muassa iensairauksien hoidosta, juurihoidoista, paikkaushoidosta sekä protetiikasta.
-        </p>
+            <p data-en="In my work, I emphasize patient-centered care, clear communication, and meticulous dental work. I handle a wide range of oral health challenges, from routine check-ups and toothache treatment to more advanced procedures. I have experience in treating gum diseases, root canals, fillings, and prosthetics."
+               data-fi="Työssäni korostuvat potilaslähtöisyys, selkeä viestintä ja huolellinen hoitotyö. Hoidan laajasti erilaisia suun terveyden haasteita aina perustarkastuksista ja hammassäryn hoidosta vaativampiin toimenpiteisiin. Minulla on kokemusta muun muassa iensairauksien hoidosta, juurihoidoista, paikkaushoidosta sekä protetiikasta.">
+              Työssäni korostuvat potilaslähtöisyys, selkeä viestintä ja huolellinen hoitotyö. Hoidan laajasti erilaisia suun terveyden haasteita aina perustarkastuksista ja hammassäryn hoidosta vaativampiin toimenpiteisiin. Minulla on kokemusta muun muassa iensairauksien hoidosta, juurihoidoista, paikkaushoidosta sekä protetiikasta.
+            </p>
 
-        <p data-en="I place particular importance on a calm treatment environment and ensuring that you understand the different stages of treatment and feel safe throughout your visit. I also take into account patients who are anxious or fearful in an individual manner."
-           data-fi="Pidän erityisen tärkeänä rauhallista hoitotilannetta ja sitä, että ymmärrät hoidon eri vaiheet ja voit tuntea olosi turvalliseksi koko käynnin ajan. Huomioin työssäni yksilöllisesti myös jännittävät ja pelkäävät potilaat.">
-          Pidän erityisen tärkeänä rauhallista hoitotilannetta ja sitä, että ymmärrät hoidon eri vaiheet ja voit tuntea olosi turvalliseksi koko käynnin ajan. Huomioin työssäni yksilöllisesti myös jännittävät ja pelkäävät potilaat.
-        </p>
+            <p data-en="I place particular importance on a calm treatment environment and ensuring that you understand the different stages of treatment and feel safe throughout your visit. I also take into account patients who are anxious or fearful in an individual manner."
+               data-fi="Pidän erityisen tärkeänä rauhallista hoitotilannetta ja sitä, että ymmärrät hoidon eri vaiheet ja voit tuntea olosi turvalliseksi koko käynnin ajan. Huomioin työssäni yksilöllisesti myös jännittävät ja pelkäävät potilaat.">
+              Pidän erityisen tärkeänä rauhallista hoitotilannetta ja sitä, että ymmärrät hoidon eri vaiheet ja voit tuntea olosi turvalliseksi koko käynnin ajan. Huomioin työssäni yksilöllisesti myös jännittävät ja pelkäävät potilaat.
+            </p>
 
-        <p data-en="My goal is to provide high-quality and sustainable care, and to create a dental environment where you feel comfortable and at ease. I believe it's important that the clinic is easy to access and that treatment is done in good cooperation with the patient."
-           data-fi="Tavoitteenani on tarjota laadukasta ja kestävää hoitoa sekä luoda vastaanottoympäristö, jossa sinun on helppo ja luonteva asioida. Minulle on tärkeää, että vastaanotolle on helppo tulla ja että hoito tapahtuu hyvässä yhteistyössä potilaan kanssa.">
-          Tavoitteenani on tarjota laadukasta ja kestävää hoitoa sekä luoda vastaanottoympäristö, jossa sinun on helppo ja luonteva asioida. Minulle on tärkeää, että vastaanotolle on helppo tulla ja että hoito tapahtuu hyvässä yhteistyössä potilaan kanssa.
-        </p>
+            <p data-en="My goal is to provide high-quality and sustainable care, and to create a dental environment where you feel comfortable and at ease. I believe it's important that the clinic is easy to access and that treatment is done in good cooperation with the patient."
+               data-fi="Tavoitteenani on tarjota laadukasta ja kestävää hoitoa sekä luoda vastaanottoympäristö, jossa sinun on helppo ja luonteva asioida. Minulle on tärkeää, että vastaanotolle on helppo tulla ja että hoito tapahtuu hyvässä yhteistyössä potilaan kanssa.">
+              Tavoitteenani on tarjota laadukasta ja kestävää hoitoa sekä luoda vastaanottoympäristö, jossa sinun on helppo ja luonteva asioida. Minulle on tärkeää, että vastaanotolle on helppo tulla ja että hoito tapahtuu hyvässä yhteistyössä potilaan kanssa.
+            </p>
+          </div>
+
+          <div class="about-cards">
+            <div class="info-card">
+              <div class="card-icon">⌬</div>
+              <div>
+                <h4 data-en="Why choose me?" data-fi="Miksi valita minut?">Miksi valita minut?</h4>
+                <p data-en="I provide high-quality, patient-centred dental care in a calm and trustworthy environment. My focus is on clear communication, so you understand your treatment options and feel confident and comfortable throughout your visit."
+                   data-fi="Tarjoan laadukasta ja potilaslähtöistä hammashoitoa rauhallisessa ja luotettavassa ympäristössä. Panostan selkeään viestintään, jotta ymmärrät hoitovaihtoehtosi ja voit tuntea olosi varmaksi koko käynnin ajan.">
+                  Tarjoan laadukasta ja potilaslähtöistä hammashoitoa rauhallisessa ja luotettavassa ympäristössä. Panostan selkeään viestintään, jotta ymmärrät hoitovaihtoehtosi ja voit tuntea olosi varmaksi koko käynnin ajan.
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="card-icon">🎖</div>
+              <div>
+                <h4 data-en="Education" data-fi="Koulutus">Koulutus</h4>
+                <p data-en="Licentiate in Dentistry, graduated in 2019"
+                   data-fi="Hammaslääketieteen lisensiaatti, valmistunut 2019">
+                  Hammaslääketieteen lisensiaatti, valmistunut 2019
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="card-icon">𐃯</div>
+              <div>
+                <h4 data-en="Experience" data-fi="Kokemus">Kokemus</h4>
+                <p data-en="Private practice: 2020-<br>Public dental care: 2016-2022"
+                   data-fi="Yksityisvastaanotto: 2020-<br>Julkinen hammashoito: 2016-2022">
+                  Yksityisvastaanotto: 2020-<br>
+                  Julkinen hammashoito: 2016-2022
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="card-icon">᪥</div>
+              <div>
+                <h4 data-en="Languages" data-fi="Kielitaito">Kielitaito</h4>
+                <p data-en="Finnish: native<br>English: excellent<br>Swedish: basic"
+                   data-fi="Suomi: äidinkieli<br>Englanti: erinomainen<br>Ruotsi: perustaso">
+                  Suomi: äidinkieli<br>
+                  Englanti: erinomainen<br>
+                  Ruotsi: perustaso
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="about-cards">
-        <div class="info-card">
-          <div class="card-icon">⌬</div>
-          <div>
-            <h4 data-en="Why choose me?" data-fi="Miksi valita minut?">Miksi valita minut?</h4>
-            <p data-en="I provide high-quality, patient-centred dental care in a calm and trustworthy environment. My focus is on clear communication, so you understand your treatment options and feel confident and comfortable throughout your visit."
-               data-fi="Tarjoan laadukasta ja potilaslähtöistä hammashoitoa rauhallisessa ja luotettavassa ympäristössä. Panostan selkeään viestintään, jotta ymmärrät hoitovaihtoehtosi ja voit tuntea olosi varmaksi koko käynnin ajan.">
-              Tarjoan laadukasta ja potilaslähtöistä hammashoitoa rauhallisessa ja luotettavassa ympäristössä. Panostan selkeään viestintään, jotta ymmärrät hoitovaihtoehtosi ja voit tuntea olosi varmaksi koko käynnin ajan.
-            </p>
-          </div>
-        </div>
-
-        <div class="info-card">
-          <div class="card-icon">🎖</div>
-          <div>
-            <h4 data-en="Education" data-fi="Koulutus">Koulutus</h4>
-            <p data-en="Licensiate in Dentistry, graduated in 2019"
-               data-fi="Hammaslääkäri lisensiaatti, valmistunut 2019">
-              Hammaslääkäri lisensiaatti, valmistunut 2019
-            </p>
-          </div>
-        </div>
-
-        <div class="info-card">
-          <div class="card-icon">𐃯</div>
-          <div>
-            <h4 data-en="Experience" data-fi="Kokemus">Kokemus</h4>
-            <p data-en="Private practice: 2020-<br>Public dental care: 2016-2022"
-               data-fi="Yksityisvastaanotto: 2020-<br>Julkinen hammashoito: 2016-2022">
-              Yksityisvastaanotto: 2020-<br>
-              Julkinen hammashoito: 2016-2022
-            </p>
-          </div>
-        </div>
-
-        <div class="info-card">
-          <div class="card-icon">᪥</div>
-          <div>
-            <h4 data-en="Languages" data-fi="Kielitaito">Kielitaito</h4>
-            <p data-en="Finnish: native<br>English: excellent<br>Swedish: basic"
-               data-fi="Suomi: äidinkieli<br>Englanti: erinomainen<br>Ruotsi: perustaso">
-              Suomi: äidinkieli<br>
-              Englanti: erinomainen<br>
-              Ruotsi: perustaso
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- ================== PALVELUT SEKTIO ======================== -->
     <section id="services" class="services-section">
       <div class="container">
         <div class="section-title">
-          <h2 data-en="Services" data-fi="Palvelut">Our Services</h2>
-          <p data-en="Dental care from routine check-ups to more advanced treatments" data-fi="Hammashoitoa perustarkastuksista vaativampiin toimenpiteisiin">
-            Dental care from routine check-ups to more advanced treatments
+          <h2 data-en="Services" data-fi="Palvelut">Palvelut</h2>
+          <p data-en="Dental care from routine check-ups to more advanced treatments"
+             data-fi="Hammashoitoa perustarkastuksista vaativampiin toimenpiteisiin">
+            Hammashoitoa perustarkastuksista vaativampiin toimenpiteisiin
           </p>
         </div>
 
         <div class="services-grid">
           <div class="service-card">
             <div class="service-icon">♡</div>
-            <h3 data-en="Dental Check-ups" data-fi="Hammastarkastukset">Dental Check-ups</h3>
+            <h3 data-en="Dental Check-ups" data-fi="Hammastarkastukset">Hammastarkastukset</h3>
             <p data-en="Comprehensive oral examinations to assess the condition of the teeth, gums, and oral tissues, and to detect potential issues at an early stage."
-            data-fi="Perustarkastukset suun terveyden arviointiin ja mahdollisten ongelmien varhaiseen havaitsemiseen.">
-              Routine examinations to assess oral health and detect possible problems early.
+               data-fi="Perustarkastukset suun terveyden arviointiin ja mahdollisten ongelmien varhaiseen havaitsemiseen.">
+              Perustarkastukset suun terveyden arviointiin ja mahdollisten ongelmien varhaiseen havaitsemiseen.
             </p>
           </div>
 
           <div class="service-card">
             <div class="service-icon">!</div>
-            <h3 data-en="Tooth Pain and Urgent Care" data-fi="Hammassärky ja kiireellinen hoito">Tooth Pain and Urgent Care</h3>
+            <h3 data-en="Tooth Pain and Urgent Care" data-fi="Hammassärky ja kiireellinen hoito">Hammassärky ja kiireellinen hoito</h3>
             <p data-en="Prompt care for toothache, swelling, and other acute dental concerns, with timely assessment and necessary treatment."
-            data-fi="Hammassäryn, turvotuksen, lohjenneiden hampaiden ja muiden kiireellisten vaivojen arviointi ja hoito.">
-              Assessment and treatment of tooth pain, swelling, broken teeth and other urgent dental concerns.
+               data-fi="Hammassäryn, turvotuksen, lohjenneiden hampaiden ja muiden kiireellisten vaivojen arviointi ja hoito.">
+              Hammassäryn, turvotuksen, lohjenneiden hampaiden ja muiden kiireellisten vaivojen arviointi ja hoito.
             </p>
           </div>
 
           <div class="service-card">
             <div class="service-icon">✦</div>
-            <h3 data-en="Fillings" data-fi="Paikkaukset">Fillings</h3>
+            <h3 data-en="Fillings" data-fi="Paikkaukset">Paikkaukset</h3>
             <p data-en="Restorative dental treatment used to repair decayed or damaged teeth and restore their function and appearance."
-            data-fi="Paikkaukset reikiintyneiden, kuluneiden tai lohjenneiden hampaiden korjaamiseen.">
-              Restorative fillings for teeth affected by cavities, wear or small fractures.
+               data-fi="Paikkaukset reikiintyneiden, kuluneiden tai lohjenneiden hampaiden korjaamiseen.">
+              Paikkaukset reikiintyneiden, kuluneiden tai lohjenneiden hampaiden korjaamiseen.
             </p>
           </div>
 
           <div class="service-card">
             <div class="service-icon">✚</div>
-            <h3 data-en="Tartar Removal & Gum Care" data-fi="Hammaskiven poisto ja iensairauksien hoito">Tartar Removal & Gum Care</h3>
+            <h3 data-en="Tartar Removal & Gum Care" data-fi="Hammaskiven poisto ja iensairauksien hoito">Hammaskiven poisto ja iensairauksien hoito</h3>
             <p data-en="Professional cleaning and gum care to support healthy teeth and gums."
-            data-fi="Ammattimainen puhdistus ja ienten hoito suun terveyden ylläpitämiseksi.">
-              Professional cleaning and gum care to support healthy teeth and gums.
+               data-fi="Ammattimainen puhdistus ja ienten hoito suun terveyden ylläpitämiseksi.">
+              Ammattimainen puhdistus ja ienten hoito suun terveyden ylläpitämiseksi.
             </p>
           </div>
 
           <div class="service-card">
             <div class="service-icon">𖣂︎</div>
-            <h3 data-en="Root Canal Treatments" data-fi="Juurihoidot">Root Canal Treatments</h3>
-            <p data-en="Endodontic treatment for infected or painful teeth, aiming to save the natural tooth." 
-            data-fi="Tulehtuneen tai vaurioituneen hampaan hoito, jonka tavoitteena on säilyttää oma hammas mahdollisimman pitkään.">
-              Endodontic treatment for infected or painful teeth, aiming to save the natural tooth.
+            <h3 data-en="Root Canal Treatments" data-fi="Juurihoidot">Juurihoidot</h3>
+            <p data-en="Endodontic treatment for infected or painful teeth, aiming to save the natural tooth."
+               data-fi="Tulehtuneen tai vaurioituneen hampaan hoito, jonka tavoitteena on säilyttää oma hammas mahdollisimman pitkään.">
+              Tulehtuneen tai vaurioituneen hampaan hoito, jonka tavoitteena on säilyttää oma hammas mahdollisimman pitkään.
             </p>
           </div>
 
           <div class="service-card">
             <div class="service-icon">◌</div>
-            <h3 data-en="Bite Splints" data-fi="Purentakiskot">Bite Splints</h3>
-            <p data-en="Custom-made bite splints for teeth grinding, clenching and bite-related symptoms." 
-            data-fi="Yksilöllisesti valmistetut kiskot narskuttelun ja purentavaivojen hoitoon sekä leuan ja lihasten kuormituksen vähentämiseen.">
-              Custom-made bite splints for teeth grinding, clenching and bite-related symptoms.
+            <h3 data-en="Bite Splints" data-fi="Purentakiskot">Purentakiskot</h3>
+            <p data-en="Custom-made bite splints for teeth grinding, clenching and bite-related symptoms."
+               data-fi="Yksilöllisesti valmistetut kiskot narskuttelun ja purentavaivojen hoitoon sekä leuan ja lihasten kuormituksen vähentämiseen.">
+              Yksilöllisesti valmistetut kiskot narskuttelun ja purentavaivojen hoitoon sekä leuan ja lihasten kuormituksen vähentämiseen.
             </p>
           </div>
 
           <div class="service-card">
             <div class="service-icon">♔</div>
-            <h3 data-en="Ceramic & Implant Crowns" data-fi="Keraamiset kruunut ja implanttikruunut">Ceramic & Implant Crowns</h3>
-            <p data-en="Natural-looking ceramic crowns and implant crowns to restore function and appearance." 
-            data-fi="Luonnollisen näköiset ja kestävät ratkaisut hampaiden toiminnan ja ulkonäön palauttamiseen.">
-              Natural-looking ceramic crowns and implant crowns to restore function and appearance.
+            <h3 data-en="Ceramic & Implant Crowns" data-fi="Keraamiset kruunut ja implanttikruunut">Keraamiset kruunut ja implanttikruunut</h3>
+            <p data-en="Natural-looking ceramic crowns and implant crowns to restore function and appearance."
+               data-fi="Luonnollisen näköiset ja kestävät ratkaisut hampaiden toiminnan ja ulkonäön palauttamiseen.">
+              Luonnollisen näköiset ja kestävät ratkaisut hampaiden toiminnan ja ulkonäön palauttamiseen.
             </p>
           </div>
 
           <div class="service-card">
             <div class="service-icon">✖</div>
-            <h3 data-en="Tooth Extractions" data-fi="Hampaan poistot">Tooth Extractions</h3>
-            <p data-en="Carefully planned tooth removals when a tooth cannot be restored or should be removed." 
-            data-fi="Huolellisesti suunnitellut hampaan poistot silloin, kun hammasta ei voida enää säilyttää.">
-              Carefully planned tooth removals when a tooth cannot be restored or should be removed.
+            <h3 data-en="Tooth Extractions" data-fi="Hampaan poistot">Hampaan poistot</h3>
+            <p data-en="Carefully planned tooth removals when a tooth cannot be restored or should be removed."
+               data-fi="Huolellisesti suunnitellut hampaan poistot silloin, kun hammasta ei voida enää säilyttää.">
+              Huolellisesti suunnitellut hampaan poistot silloin, kun hammasta ei voida enää säilyttää.
             </p>
           </div>
 
           <div class="service-card">
             <div class="service-icon">✂</div>
-            <h3 data-en="Surgical Extractions" data-fi="Kirurgiset hampaan poistot">Surgical Extractions</h3>
-            <p data-en="Surgical removal of more complex teeth, including difficult or impacted teeth." 
-            data-fi="Vaativammat poistot, kuten vaikeasti poistettavat tai puhkeamattomat hampaat, turvallisesti ja huolellisesti toteutettuna.">
-              Surgical removal of more complex teeth, including difficult or impacted teeth.
+            <h3 data-en="Surgical Extractions" data-fi="Kirurgiset hampaan poistot">Kirurgiset hampaan poistot</h3>
+            <p data-en="Surgical removal of more complex teeth, including difficult or impacted teeth."
+               data-fi="Vaativammat poistot, kuten vaikeasti poistettavat tai puhkeamattomat hampaat, turvallisesti ja huolellisesti toteutettuna.">
+              Vaativammat poistot, kuten vaikeasti poistettavat tai puhkeamattomat hampaat, turvallisesti ja huolellisesti toteutettuna.
             </p>
           </div>
         </div>
@@ -253,10 +272,10 @@
     <section id="locations" class="locations-section">
       <div class="container">
         <div class="section-title">
-          <h2 data-en="Locations" data-fi="Toimipisteet">Our Locations</h2>
-          <p data-en="I work at Oral Hammaslääkärit in Helsinki, based at the Töölö clinic and the City-Hammaslääkärit clinic." 
-          data-fi="Työskentelen Oral Hammaslääkäreillä Helsingissä, Töölön sekä City-Hammaslääkärit-toimipisteissä.">
-            Henri Ailio works at Oral Töölö and Oral City in Helsinki
+          <h2 data-en="Locations" data-fi="Toimipisteet">Toimipisteet</h2>
+          <p data-en="I work at Oral Hammaslääkärit in Helsinki, based at the Töölö clinic and the City-Hammaslääkärit clinic."
+             data-fi="Työskentelen Oral Hammaslääkäreillä Helsingissä, Töölön sekä City-Hammaslääkärit-toimipisteissä.">
+            Työskentelen Oral Hammaslääkäreillä Helsingissä, Töölön sekä City-Hammaslääkärit-toimipisteissä.
           </p>
         </div>
 
@@ -271,21 +290,21 @@
 
             <div class="location-row">
               <span class="location-icon">☏</span>
-              <p>010 400 3340</p>
+              <p><a href="tel:+358104003340">010 400 3340</a></p>
             </div>
 
             <div class="location-row">
               <span class="location-icon">◷</span>
               <p data-en="Availability:&#10;Mondays: 13:30 - 20:00&#10;Fridays: 8:00 - 14:30"
                  data-fi="Vastaanottoajat:&#10;Maanantaisin: 13:30 - 20:00&#10;Perjantaisin: 8:00 - 14:30">
-                Henri Ailio's Availability:<br>
-                Monday: 13:30 - 20:00<br>
-                Friday: 8:00 - 14:30
+                Vastaanottoajat:<br>
+                Maanantaisin: 13:30 - 20:00<br>
+                Perjantaisin: 8:00 - 14:30
               </p>
             </div>
 
             <div class="map-box">
-              <iframe src="https://www.google.com/maps?q=Mannerheimintie%2076%20A%2C%2000250%20Helsinki&output=embed" loading="lazy"></iframe>
+              <iframe title="Kartta Oral Töölön toimipisteeseen" src="https://www.google.com/maps?q=Mannerheimintie%2076%20A%2C%2000250%20Helsinki&output=embed" loading="lazy"></iframe>
             </div>
           </div>
 
@@ -299,21 +318,21 @@
 
             <div class="location-row">
               <span class="location-icon">☏</span>
-              <p>010 400 3050</p>
+              <p><a href="tel:+358104003050">010 400 3050</a></p>
             </div>
 
             <div class="location-row">
               <span class="location-icon">◷</span>
               <p data-en="Availability:&#10;Tuesdays: 7:30 - 13:00&#10;Thursdays: 13:30 - 19:00"
                  data-fi="Vastaanottoajat:&#10;Tiistaisin: 7:30 - 13:00&#10;Torstaisin: 13:30 - 19:00">
-                Henri Ailio's Availability:<br>
-                Tuesday: 7:30 - 13:00<br>
-                Thursday: 13:30 - 19:00
+                Vastaanottoajat:<br>
+                Tiistaisin: 7:30 - 13:00<br>
+                Torstaisin: 13:30 - 19:00
               </p>
             </div>
 
             <div class="map-box">
-              <iframe src="https://www.google.com/maps?q=Aleksanterinkatu%2021%20A%2C%2000100%20Helsinki&output=embed" loading="lazy"></iframe>
+              <iframe title="Kartta Oral City-Hammaslääkäreiden toimipisteeseen" src="https://www.google.com/maps?q=Aleksanterinkatu%2021%20A%2C%2000100%20Helsinki&output=embed" loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -324,91 +343,91 @@
     <section id="faq" class="faq-section">
       <div class="container">
         <div class="section-title">
-          <h2 data-en="Frequently Asked Questions" data-fi="Usein kysytyt kysymykset">Frequently Asked Questions</h2>
-          <p data-en="Below you'll find answers to the most common questions people have before visiting the dentist." 
-          data-fi="Alta löydät vastauksia yleisimpiin kysymyksiin, jotka askarruttavat monia ennen hammaslääkärikäyntiä.">
-            Find answers to common questions about dental care and treatments
+          <h2 data-en="Frequently Asked Questions" data-fi="Usein kysytyt kysymykset">Usein kysytyt kysymykset</h2>
+          <p data-en="Below you'll find answers to the most common questions people have before visiting the dentist."
+             data-fi="Alta löydät vastauksia yleisimpiin kysymyksiin, jotka askarruttavat monia ennen hammaslääkärikäyntiä.">
+            Alta löydät vastauksia yleisimpiin kysymyksiin, jotka askarruttavat monia ennen hammaslääkärikäyntiä.
           </p>
         </div>
 
         <div class="faq-card">
           <details class="faq-item">
-            <summary data-en="How often should I visit the dentist?" data-fi="Kuinka usein hammaslääkärissä tulisi käydä?">How often should I visit the dentist?</summary>
+            <summary data-en="How often should I visit the dentist?" data-fi="Kuinka usein hammaslääkärissä tulisi käydä?">Kuinka usein hammaslääkärissä tulisi käydä?</summary>
             <p data-en="The appropriate check-up interval is individual and depends on your oral health, previous conditions, and risk factors. Your dentist will assess a suitable recall interval during your visit. During an examination, factors such as plaque, tartar, gum health, periodontal pockets, oral mucosa, and the condition of your teeth are evaluated."
                data-fi="Sopiva tarkastusväli on yksilöllinen ja riippuu suun terveydestä, aiemmista sairauksista ja riskitekijöistä. Hammaslääkäri arvioi sinulle sopivan käyntivälin tarkastuksen yhteydessä. Suun terveystarkastuksessa arvioidaan esimerkiksi plakki, hammaskivi, ientulehdus, ientaskut, limakalvot ja hampaiden kunto.">
-              It is generally recommended to visit the dentist regularly for check-ups.
+              Sopiva tarkastusväli on yksilöllinen ja riippuu suun terveydestä, aiemmista sairauksista ja riskitekijöistä.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary data-en="Does dental treatment hurt?" data-fi="Sattuuko hammashoito?">Is dental treatment painful?</summary>
+            <summary data-en="Does dental treatment hurt?" data-fi="Sattuuko hammashoito?">Sattuuko hammashoito?</summary>
             <p data-en="Most treatments can be performed painlessly under local anaesthesia. Our goal is always to provide a calm and comfortable treatment experience."
                data-fi="Useimmat hoidot voidaan tehdä kivuttomasti paikallispuudutuksessa. Tavoitteena on aina mahdollisimman rauhallinen ja kivuton hoitokokemus.">
-              Most dental treatments can be done comfortably with local anaesthesia.
+              Useimmat hoidot voidaan tehdä kivuttomasti paikallispuudutuksessa.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary data-en="What if I am afraid of dental treatment?" data-fi="Mitä jos pelkään hammaslääkärin hoitoa?">What if I am afraid of dental treatment?</summary>
+            <summary data-en="What if I am afraid of dental treatment?" data-fi="Mitä jos pelkään hammaslääkärin hoitoa?">Mitä jos pelkään hammaslääkärin hoitoa?</summary>
             <p data-en="Dental anxiety is very common and nothing to be ashamed of. Please let us know about your concerns when booking your appointment or at the clinic. We will proceed calmly at your pace and ensure you feel as comfortable and safe as possible throughout the visit."
                data-fi="Hammaslääkäripelko on hyvin yleistä, eikä sitä tarvitse hävetä. Kerrothan pelostasi jo ajanvarauksen yhteydessä tai vastaanotolla. Etenemme rauhallisesti sinun tahdissa ja varmistamme, että olosi on mahdollisimman turvallinen koko hoidon ajan.">
-              It's normal to feel anxious about dental treatment. We can help you feel comfortable.
+              Hammaslääkäripelko on hyvin yleistä, eikä sitä tarvitse hävetä.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary data-en="When to seek emergency care?" data-fi="Milloin pitää hakeutua päivystykseen?">When to seek emergency care?</summary>
+            <summary data-en="When to seek emergency care?" data-fi="Milloin pitää hakeutua päivystykseen?">Milloin pitää hakeutua päivystykseen?</summary>
             <p data-en="You should seek emergency care if you experience severe tooth pain, swelling of the face or gums, fever, pus discharge, trauma, or rapidly worsening symptoms. Oral infections can spread and affect overall health if left untreated, which is why prompt care is important."
                data-fi="Päivystykseen on syytä hakeutua, jos sinulla on voimakas hammaskipu, kasvojen tai ikenen turvotus, kuume, märkävuoto, tapaturma, nielemisvaikeuksia, hengitysvaikeuksia tai oireet pahanevat nopeasti. Hammasperäiset infektiot voivat hoitamattomina levitä elimistöön ja vaikuttaa yleisterveyteen, minkä vuoksi ne on tärkeää hoitaa viivytyksettä.">
-              Seek emergency care when experiencing severe tooth pain, swelling, fever, or other urgent symptoms.
+              Päivystykseen on syytä hakeutua, jos sinulla on voimakas hammaskipu, turvotus, kuume tai nopeasti pahenevia oireita.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary data-en="What is a root canal treatment?" data-fi="Mitä juurihoito tarkoittaa?">What is a root canal treatment?</summary>
+            <summary data-en="What is a root canal treatment?" data-fi="Mitä juurihoito tarkoittaa?">Mitä juurihoito tarkoittaa?</summary>
             <p data-en="Root canal treatment is needed when the pulp inside the tooth becomes inflamed or damaged. During the procedure, the root canals are cleaned, disinfected, and filled in order to preserve the natural tooth whenever possible."
-               data-fi="Juurihoitoa tarvitaan, kun hampaan sisällä oleva ydin on tulehtunut tai vaurioitunut. Hoidossa hampaan juurikanavat puhdistetaan, desinfioidaan ja täytetään, jotta oma hammasvoidaan usein säilyttää.">
-              Root canal treatment is used to treat an infected or badly damaged tooth.
+               data-fi="Juurihoitoa tarvitaan, kun hampaan sisällä oleva ydin on tulehtunut tai vaurioitunut. Hoidossa hampaan juurikanavat puhdistetaan, desinfioidaan ja täytetään, jotta oma hammas voidaan usein säilyttää.">
+              Juurihoitoa tarvitaan, kun hampaan sisällä oleva ydin on tulehtunut tai vaurioitunut.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary data-en="What is the difference between a filling and a crown?" data-fi="Mitä eroa on paikalla ja kruunulla?">What is the difference between a filling and a crown?</summary>
+            <summary data-en="What is the difference between a filling and a crown?" data-fi="Mitä eroa on paikalla ja kruunulla?">Mitä eroa on paikalla ja kruunulla?</summary>
             <p data-en="A filling is used to repair a small or moderate area of damage in a tooth, whereas a crown covers the entire visible part of the tooth and protects it when the damage is more extensive or the tooth is weakened. A crown is recommended especially when a significant amount of tooth structure has been lost and a filling alone is no longer sufficient for a durable result."
                data-fi="Paikka korjaa pienemmän vaurion hampaassa, kun taas kruunu peittää koko hampaan ja suojaa sitä laajemman vaurion tai heikentymisen yhteydessä. Kruunua suositellaan erityisesti silloin, kun hampaasta on menetetty paljon rakennetta eikä pelkkä paikka enää riitä kestävään lopputulokseen.">
-              Filling and crown are different dental restorations used for different levels of tooth damage.
+              Paikka korjaa pienemmän vaurion hampaassa, kun taas kruunu suojaa hammasta laajemmin.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary data-en="What is a night guard (occlusal splint)?" data-fi="Mitä on purentakisko?">What is a night guard (occlusal splint)?</summary>
+            <summary data-en="What is a night guard (occlusal splint)?" data-fi="Mitä on purentakisko?">Mitä on purentakisko?</summary>
             <p data-en="A night guard is a custom-made appliance, usually worn at night. It protects the teeth from grinding and clenching and helps reduce the load on the jaw muscles and joints."
-               data-fi="Purentakisko on yksilöllisesti valmistettu muovinen kisko, jota käytetään yleensä öisin. Se suojaa hampaita yhteenpuremiselta ja narskuttelulta sekä vähentää puremalihasten ja leuknivelten kuormitusta.">
-              A bite splint may help if you grind or clench your teeth at night.
+               data-fi="Purentakisko on yksilöllisesti valmistettu muovinen kisko, jota käytetään yleensä öisin. Se suojaa hampaita yhteenpuremiselta ja narskuttelulta sekä vähentää puremalihasten ja leukanivelten kuormitusta.">
+              Purentakisko on yksilöllisesti valmistettu muovinen kisko, jota käytetään yleensä öisin.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary data-en="Can I receive Kela reimbursement for private dental care?" data-fi="Saanko Kela-korvausta yksityisestä hammashoidosta?">Do I get kela coverage for private dental care?</summary>
+            <summary data-en="Can I receive Kela reimbursement for private dental care?" data-fi="Saanko Kela-korvausta yksityisestä hammashoidosta?">Saanko Kela-korvausta yksityisestä hammashoidosta?</summary>
             <p data-en="Kela reimbursement may be available for private dental care in certain situations. The amount and conditions should be checked with Kela or the clinic."
                data-fi="Yksityisestä hammashoidosta voi saada Kela-korvausta tietyissä tilanteissa. Korvauksen määrä ja ehdot kannattaa tarkistaa ajantasaisesti Kelasta tai vastaanotolta.">
-              Yes, in some cases you may be eligible for Kela coverage for private dental care.
+              Yksityisestä hammashoidosta voi saada Kela-korvausta tietyissä tilanteissa.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary data-en="What payment methods are available at the clinic?" data-fi="Mitä maksutapoja vastaanotolla voi käyttää?">What payment methods are available at the clinic?</summary>
+            <summary data-en="What payment methods are available at the clinic?" data-fi="Mitä maksutapoja vastaanotolla voi käyttää?">Mitä maksutapoja vastaanotolla voi käyttää?</summary>
             <p data-en="You can pay conveniently at the clinic by debit or credit card, cash, or with employer-provided benefits such as Epassi, Edenred, and Smartum. We also offer the option to split the cost into instalments through financing, with up to 12 months interest-free payment."
                data-fi="Vastaanotolla voit maksaa pankki- tai luottokortilla, käteisellä tai työnantajan tarjoamilla eduilla, kuten Epassilla, Edenredillä ja Smartumilla. Halutessasi maksun voi jakaa useammalle kuukaudelle rahoitusvaihtoehdon avulla, jopa 12 kuukauden korottomalla maksuajalla.">
-              Payment methods available at the practice include cards, cash, and benefit programs.
+              Vastaanotolla voit maksaa pankki- tai luottokortilla, käteisellä tai työnantajan tarjoamilla eduilla.
             </p>
           </details>
 
           <details class="faq-item">
-            <summary data-en="Can I cancel my appointment?" data-fi="Voinko peruuttaa ajan?">Can I cancel my appointment?</summary>
+            <summary data-en="Can I cancel my appointment?" data-fi="Voinko peruuttaa ajan?">Voinko peruuttaa ajan?</summary>
             <p data-en="Yes. Please cancel your appointment as early as possible according to the clinic's instructions. A fee may be charged for late cancellations or missed appointments in accordance with the clinic's terms."
                data-fi="Kyllä. Aika kannattaa peruuttaa mahdollisimman ajoissa vastaanoton ohjeiden mukaan. Myöhässä perutusta tai käyttämättä jätetystä ajasta voidaan periä maksua vastaanoton ehtojen mukaisesti.">
-              Yes, you can cancel your appointment according to the clinic's policies.
+              Kyllä. Aika kannattaa peruuttaa mahdollisimman ajoissa vastaanoton ohjeiden mukaan.
             </p>
           </details>
         </div>
@@ -431,6 +450,7 @@
                target="_blank"
                rel="noopener noreferrer"
                class="btn btn-light"
+               aria-label="Varaa aika Henri Ailiolle Oralin sivuilta"
                data-en="Book online ↗"
                data-fi="Varaa verkossa ↗">
               Varaa verkossa ↗
@@ -438,6 +458,7 @@
 
             <a href="tel:+358104003400"
                class="btn btn-call"
+               aria-label="Soita Oralin yleiseen ajanvaraukseen"
                data-en="Call now"
                data-fi="Soita nyt">
               Soita nyt
@@ -454,7 +475,7 @@
           </p>
         </div>
 
-        <div class="booking-image image-placeholder dark">
+        <div class="booking-image image-placeholder dark" role="img" aria-label="Ajanvarauksen kuva tulossa">
           <span data-en="Image coming soon" data-fi="Kuva tulossa">Kuva tulossa</span>
         </div>
       </div>
@@ -466,18 +487,19 @@
     <div class="container footer-grid">
       <div>
         <h3>Henri Ailio</h3>
-        <p data-en="Comprehensive dental care services in Helsinki." data-fi="Monipuolisia hammashoitopalveluita Helsingissä.">
-          Comprehensive dental care services in Helsinki.
+        <p data-en="Comprehensive dental care services in Helsinki."
+           data-fi="Monipuolisia hammashoitopalveluita Helsingissä.">
+          Monipuolisia hammashoitopalveluita Helsingissä.
         </p>
       </div>
 
       <div>
-        <h3 data-en="Quick Links" data-fi="Pikalinkit">Quick Links</h3>
-        <a href="#about" data-en="About" data-fi="Tietoa minusta">About</a>
-        <a href="#services" data-en="Services" data-fi="Palvelut">Services</a>
-        <a href="#locations" data-en="Locations" data-fi="Toimipisteet">Locations</a>
-        <a href="#faq" data-en="FAQ" data-fi="UKK">FAQ</a>
-        <a href="https://www.oral.fi/asiantuntijat/henri-ailio/" target="_blank" rel="noopener noreferrer" data-en="Book Appointment" data-fi="Varaa aika">Book Appointment</a>
+        <h3 data-en="Quick Links" data-fi="Pikalinkit">Pikalinkit</h3>
+        <a href="#about" data-en="About me" data-fi="Tietoa minusta">Tietoa minusta</a>
+        <a href="#services" data-en="Services" data-fi="Palvelut">Palvelut</a>
+        <a href="#locations" data-en="Locations" data-fi="Toimipisteet">Toimipisteet</a>
+        <a href="#faq" data-en="FAQ" data-fi="UKK">UKK</a>
+        <a href="https://www.oral.fi/asiantuntijat/henri-ailio/" target="_blank" rel="noopener noreferrer" aria-label="Varaa aika Henri Ailiolle Oralin sivuilta" data-en="Book Appointment" data-fi="Varaa aika">Varaa aika</a>
       </div>
 
       <div>
@@ -487,7 +509,11 @@
         <a href="mailto:toolo@oral.fi?subject=Ajanvaraus" class="footer-email">toolo@oral.fi</a>
         <p data-en="Mon 8:00 - 20:00&#10;Tue 8:00 - 20:00&#10;Wed 8:00 - 20:00&#10;Thu 8:00 - 20:00&#10;Fri 8:00 - 14:30"
            data-fi="Ma 8:00 - 20:00&#10;Ti 8:00 - 20:00&#10;Ke 8:00 - 20:00&#10;To 8:00 - 20:00&#10;Pe 8:00 - 14:30">
-          Mon 8:00 - 20:00<br>Tue 8:00 - 20:00<br>Wed 8:00 - 20:00
+          Ma 8:00 - 20:00<br>
+          Ti 8:00 - 20:00<br>
+          Ke 8:00 - 20:00<br>
+          To 8:00 - 20:00<br>
+          Pe 8:00 - 14:30
         </p>
       </div>
 
@@ -498,7 +524,11 @@
         <a href="mailto:city@oral.fi?subject=Ajanvaraus" class="footer-email">city@oral.fi</a>
         <p data-en="Mon 7:30 - 19:00&#10;Tue 7:30 - 19:00&#10;Wed 7:30 - 19:00&#10;Thu 7:30 - 19:00&#10;Fri 7:30 - 14:00"
            data-fi="Ma 7:30 - 19:00&#10;Ti 7:30 - 19:00&#10;Ke 7:30 - 19:00&#10;To 7:30 - 19:00&#10;Pe 7:30 - 14:00">
-          Mon 7:30 - 19:00<br>Tue 7:30 - 19:00<br>Wed 7:30 - 19:00
+          Ma 7:30 - 19:00<br>
+          Ti 7:30 - 19:00<br>
+          Ke 7:30 - 19:00<br>
+          To 7:30 - 19:00<br>
+          Pe 7:30 - 14:00
         </p>
       </div>
     </div>

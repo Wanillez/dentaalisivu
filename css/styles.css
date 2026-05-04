@@ -816,6 +816,16 @@ footer a:hover {
   }
 }
 
+@media (max-width: 900px) {
+  .about-cards {
+    margin-left: 0;
+  }
+
+  .info-card {
+    max-width: none;
+  }
+}
+
 @media (max-width: 520px) {
   .container {
     width: 92%;
